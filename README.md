@@ -21,7 +21,7 @@ Each form also moves differently:
 | Gear 1 | Classic Gum-Gum Pistol: wind-up, stretch, snap back |
 | Gear 2 | Blindingly fast flurry of punches with heavy blur afterimages and a vibrating, steaming body |
 | Gear 3 | The arm inflates as it stretches, ending in a bigger fist; slow and heavy |
-| Gear 4 · Boundman | Bouncing stance, Haki arm |
+| Gear 4 · Boundman | Bigger, fat and heavy; bounces up and down like a ball (squashing on landing, stretching in the air) with a black Haki arm |
 | Gear 4 · Snakeman | The arm whips out in a zigzag, and he sways |
 | Gear 5 | Floats off the ground, bobbing and tilting, while still punching in gear 5 form |
 

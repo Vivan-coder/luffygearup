@@ -44,7 +44,7 @@ const FORMS = [
     inflate: true, fistS: 2.3, sway: true, glow: "#ffa14d", flash: "#ffd7a8",
     steam: { n: 9, color: "#ffffff", op: 0.28, rise: 55, size: [5, 10] } },
   { min: 3000, id: "g4b", name: "Gear 4 · Boundman", skin: SKIN, limb: DARK_LIMB, fist: ["#4f5266", "#0b0c10"], fistStroke: "#000", knuckle: "#000",
-    legBack: "#14151c", hair: "#14110f", shorts: ["#3a1114", "#1c0709"], vest: false, tattoo: true, s: 1.08, bob: true,
+    legBack: "#14151c", hair: "#14110f", shorts: ["#3a1114", "#1c0709"], vest: false, tattoo: true, s: 1.04, bounce: true, fat: true,
     hitsMax: 3, durMul: 0.9, reachMul: 1.05, armMul: 1.3, glow: "#e0323c", flash: "#ff9a9a", auraC: "#d12a35",
     steam: { n: 12, color: "#d8323c", op: 0.32, rise: 60, size: [5, 11] } },
   { min: 4000, id: "g4s", name: "Gear 4 · Snakeman", skin: SKIN, limb: DARK_LIMB, fist: ["#4f5266", "#0b0c10"], fistStroke: "#000", knuckle: "#000",
@@ -139,6 +139,7 @@ function build(count) {
   const W = 900, H = 300, groundY = 248;
   const shoulderX = 148, armY = 116;
   const s = form.s;
+  const fat = !!form.fat;
   const pivX = 116;
   const wx = (x) => pivX + (x - pivX) * s; // local -> world, x
   const wy = (y) => groundY + (y - groundY) * s;
@@ -319,7 +320,7 @@ function build(count) {
 
   // Haki tattoo patterns (Gear 4)
   const tattoo = form.tattoo
-    ? `<g fill="#07070b" opacity="0.92">
+    ? `<g fill="#07070b" opacity="0.92"${form.fat ? ' transform="translate(-19 0) scale(1.18 1)"' : ""}>
         <path d="M108 112 Q122 124 112 140 Q128 148 116 164 L121 178 L111 178 L108 150 Q116 136 108 124 Z"/>
         <path d="M148 108 Q138 124 144 140 Q134 150 140 166 L142 176 Q150 150 146 138 Q154 124 148 108 Z"/>
         <path d="M126 112 L130 124 L124 128 L132 138 L126 146" fill="none" stroke="#07070b" stroke-width="2.5" stroke-linecap="round"/>
@@ -333,7 +334,16 @@ function build(count) {
   hitT.forEach((t) => shake.push([t, "0 0"], [t + 0.012 * win, `${A} ${f(-A * 0.5)}`], [t + 0.024 * win, `${-A} ${f(A * 0.5)}`], [t + 0.036 * win, `${f(A * 0.5)} 0`], [t + 0.05 * win, "0 0"]));
   const sp2 = "0.4 0 0.6 1";
   let idleAnim = "", tiltAnim = "", shadowAnim = "";
-  if (form.bob) idleAnim = `<animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="0.5s" repeatCount="indefinite"/>`;
+  let squashOpen = "", squashClose = "";
+  if (form.bounce) {
+    // Boundman: heavy bouncing ball. Squash on landing, stretch in the air, shadow shrinks with height.
+    const bk = "0;0.15;0.5;0.85;1";
+    const bs = '0.3 0 0.7 1;0.2 0.6 0.4 1;0.6 0 0.8 0.4;0.3 0 0.7 1';
+    idleAnim = `<animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 -13;0 -3;0 0" keyTimes="${bk}" calcMode="spline" keySplines="${bs}" dur="0.8s" repeatCount="indefinite"/>`;
+    squashOpen = `<g transform="translate(116 248)"><g><animateTransform attributeName="transform" type="scale" values="1.1 0.9;1 1;0.97 1.03;1 1;1.1 0.9" keyTimes="${bk}" calcMode="spline" keySplines="${bs}" dur="0.8s" repeatCount="indefinite"/><g transform="translate(-116 -248)">`;
+    squashClose = "</g></g></g>";
+    shadowAnim = `<animate attributeName="rx" values="92;88;66;88;92" keyTimes="${bk}" dur="0.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.6;0.5;0.28;0.5;0.6" keyTimes="${bk}" dur="0.8s" repeatCount="indefinite"/>`;
+  }
   if (form.jitter) idleAnim = `<animateTransform attributeName="transform" type="translate" values="0 0;-1.3 0.7;1.3 -0.7;-0.8 -0.5;0 0" dur="0.1s" repeatCount="indefinite"/>`;
   if (form.sway && form.inflate) idleAnim = `<animateTransform attributeName="transform" type="translate" values="0 0;0 2.4;0 0" keyTimes="0;0.5;1" calcMode="spline" keySplines="${sp2};${sp2}" dur="1.9s" repeatCount="indefinite"/>`;
   if (form.sway && zg) idleAnim = `<animateTransform attributeName="transform" type="translate" values="0 0;6 0;0 0;-6 0;0 0" keyTimes="0;0.25;0.5;0.75;1" calcMode="spline" keySplines="${sp2};${sp2};${sp2};${sp2}" dur="1.3s" repeatCount="indefinite"/>`;
@@ -351,8 +361,12 @@ function build(count) {
     : "";
   const sashFill = white ? "#f4f7ff" : form.vest ? "#d9c27a" : "#2a0d10";
   const sashLine = white ? "#c3cfe6" : form.vest ? "#a58f4c" : "#000";
-  const sash = `<path d="M108 166 L143 164 L142 174 L110 177 Z" fill="${sashFill}"/>
+  const sash = fat
+    ? `<path d="M96 165 L160 163 L159 176 L98 180 Z" fill="${sashFill}"/><path d="M96 170 L160 168" stroke="${sashLine}" stroke-width="1"/>`
+    : `<path d="M108 166 L143 164 L142 174 L110 177 Z" fill="${sashFill}"/>
       <path d="M108 170 L143 168" stroke="${sashLine}" stroke-width="1"/>`;
+  const torsoD = fat ? "M97 112 Q96 96 118 106 L150 104 Q173 132 161 160 Q156 177 146 181 L104 183 Q89 150 97 112 Z" : "M107 110 L148 106 L141 176 L111 178 Z";
+  const shortsD = fat ? "M96 174 L158 172 L170 206 L148 213 L131 199 L114 213 L88 207 Z" : "M108 174 L146 172 L154 202 L140 208 L128 197 L116 210 L98 205 Z";
   const eyeRx = white ? 4.4 : 3.4, eyeRy = white ? 3.4 : 2.1, pupilR = white ? 1.3 : 1.7;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Luffy ${form.name}, ${count} contributions">
@@ -390,33 +404,35 @@ function build(count) {
     ${dust}
 
     <g transform="translate(${pivX} ${groundY}) scale(${s}) translate(${-pivX} ${-groundY})">
-     <ellipse cx="116" cy="${groundY + 2}" rx="78" ry="6" fill="#000" opacity="0.5" filter="url(#soft)">${shadowAnim}</ellipse>
+     <ellipse cx="116" cy="${groundY + 2}" rx="${fat ? 92 : 78}" ry="6" fill="#000" opacity="0.5" filter="url(#soft)">${shadowAnim}</ellipse>
      <g>
       ${idleAnim}
       <g>
       ${tiltAnim}
+      ${squashOpen}
       ${auraSvg}
       ${steam}
       <g>
       ${animateT(leanPairs.map(([t, x]) => [t, `${x} 0`]), dur, { spline: true })}
 
       <!-- back arm, cocked -->
-      <path d="M112 116 L88 140 L108 152" fill="none" stroke="url(#armG)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-      <ellipse cx="110" cy="153" rx="8" ry="7.5" fill="url(#fistG)" stroke="${form.fistStroke}" stroke-width="1"/>
+      <path d="M112 116 L88 140 L108 152" fill="none" stroke="url(#armG)" stroke-width="${fat ? 19 : 12}" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="110" cy="153" rx="${fat ? 11 : 8}" ry="${fat ? 10 : 7.5}" fill="url(#fistG)" stroke="${form.fistStroke}" stroke-width="1"/>
 
       <!-- legs -->
-      <path d="M118 196 L90 222 L60 244" fill="none" stroke="${form.legBack}" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M136 196 L166 218 L170 243" fill="none" stroke="url(#armG)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M118 196 L90 222 L60 244" fill="none" stroke="${form.legBack}" stroke-width="${fat ? 23 : 14}" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M136 196 L166 218 L170 243" fill="none" stroke="url(#armG)" stroke-width="${fat ? 25 : 15}" stroke-linecap="round" stroke-linejoin="round"/>
       <path d="M121 200 L95 224 M139 200 L166 220" fill="none" stroke="#fff" stroke-opacity="0.14" stroke-width="3" stroke-linecap="round"/>
       <path d="M52 249 L82 249 L80 242 L60 240 Z" fill="#3d2a1a"/>
       <path d="M160 249 L190 249 L188 243 L168 241 Z" fill="#3d2a1a"/>
 
       <!-- shorts -->
-      <path d="M108 174 L146 172 L154 202 L140 208 L128 197 L116 210 L98 205 Z" fill="url(#shorts)"/>
+      <path d="${shortsD}" fill="url(#shorts)"/>
       <path d="M128 197 L130 175" stroke="#000" stroke-width="1.2" opacity="0.4"/>
 
       <!-- torso -->
-      <path d="M107 110 L148 106 L141 176 L111 178 Z" fill="url(#skin)"/>
+      <path d="${torsoD}" fill="url(#skin)"/>
+      ${fat ? '<ellipse cx="146" cy="148" rx="15" ry="24" fill="#fff" opacity="0.09"/><path d="M104 120 Q96 150 106 178" fill="none" stroke="#000" stroke-width="3" opacity="0.18"/>' : ""}
       <path d="M112 118 q10 12 22 2 M110 134 q12 8 26 0" fill="none" stroke="#7a4a30" stroke-width="1.4" opacity="0.45"/>
       <path d="M110 144 q12 6 24 0 M111 156 q12 6 26 0" fill="none" stroke="#7a4a30" stroke-width="1.2" opacity="0.4"/>
       <path d="M118 108 Q130 100 142 106" fill="none" stroke="#7a4a30" stroke-width="1.2" opacity="0.4"/>
@@ -446,12 +462,13 @@ function build(count) {
       <path d="M128 52 Q153 40 178 52 M134 45 Q153 36 172 45" fill="none" stroke="#b08c3a" stroke-width="1" opacity="0.5"/>
 
       <!-- shoulder + punching arm -->
-      <circle cx="${shoulderX - 2}" cy="${armY}" r="${f(Math.min(armH * 0.95, 15))}" fill="url(#armG)"/>
+      <circle cx="${shoulderX - 2}" cy="${armY}" r="${f(Math.min(armH * 0.95, fat ? 19 : 15))}" fill="url(#armG)"/>
       ${arm}
       ${white ? `<g filter="url(#soft)">${bob(1.8, 2)}${puff(shoulderX + 2, armY, armH * 1.05)}${puff(shoulderX - 8, armY - 6, armH * 0.8, 0.85)}</g>` : ""}
       ${trail}
       ${mainFist}
       </g>
+      ${squashClose}
       </g>
      </g>
     </g>

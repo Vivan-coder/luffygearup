@@ -65,6 +65,7 @@
       
       
       
+      
       <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 0;-10 0;11 0;11 0;0 0;0 0" keyTimes="0;0.12;0.24;0.3;0.4;0.6;1" calcMode="spline" keySplines="0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1" dur="3.076s" begin="0s" repeatCount="indefinite"/>
 
@@ -85,6 +86,7 @@
 
       <!-- torso -->
       <path d="M107 110 L148 106 L141 176 L111 178 Z" fill="url(#skin)"/>
+      
       <path d="M112 118 q10 12 22 2 M110 134 q12 8 26 0" fill="none" stroke="#7a4a30" stroke-width="1.4" opacity="0.45"/>
       <path d="M110 144 q12 6 24 0 M111 156 q12 6 26 0" fill="none" stroke="#7a4a30" stroke-width="1.2" opacity="0.4"/>
       <path d="M118 108 Q130 100 142 106" fill="none" stroke="#7a4a30" stroke-width="1.2" opacity="0.4"/>
@@ -142,6 +144,7 @@
       </g>
     </g>
       </g>
+      
       </g>
      </g>
     </g>
