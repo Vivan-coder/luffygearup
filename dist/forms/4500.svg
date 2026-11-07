@@ -1,0 +1,318 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="Luffy Gear 4 · Snakeman, 4500 contributions">
+  <title>4500 contributions - Gear 4 · Snakeman</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#070b14"/><stop offset="0.7" stop-color="#18222f"/><stop offset="1" stop-color="#26303b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.45" r="0.6">
+      <stop offset="0" stop-color="#ffb52e" stop-opacity="0.309"/><stop offset="1" stop-color="#ffb52e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gnd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b232d"/><stop offset="1" stop-color="#0c1117"/></linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c58e66"/><stop offset="0.55" stop-color="#eec29a"/><stop offset="1" stop-color="#d9a57c"/></linearGradient>
+    <linearGradient id="armG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5d6075"/><stop offset="0.5" stop-color="#1f212b"/><stop offset="1" stop-color="#06070a"/></linearGradient>
+    <radialGradient id="fistG" cx="0.35" cy="0.3" r="0.9"><stop offset="0" stop-color="#4f5266"/><stop offset="1" stop-color="#0b0c10"/></radialGradient>
+    <linearGradient id="vest" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7d1613"/><stop offset="1" stop-color="#c22a24"/></linearGradient>
+    <linearGradient id="shorts" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a1114"/><stop offset="1" stop-color="#1c0709"/></linearGradient>
+    <linearGradient id="straw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1d682"/><stop offset="1" stop-color="#c9a24a"/></linearGradient>
+    <radialGradient id="flashG"><stop offset="0" stop-color="#fff" stop-opacity="1"/><stop offset="0.35" stop-color="#ffe39a" stop-opacity="0.55"/><stop offset="1" stop-color="#ffb52e" stop-opacity="0"/></radialGradient>
+    <radialGradient id="aura"><stop offset="0" stop-color="#ffae2a" stop-opacity="0.35"/><stop offset="0.6" stop-color="#ffae2a" stop-opacity="0.15"/><stop offset="1" stop-color="#ffae2a" stop-opacity="0"/></radialGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.5" r="0.75"><stop offset="0.6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.55"/></radialGradient>
+    <filter id="mb" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7 1.2"/></filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.6"/></filter>
+  </defs>
+
+  <rect width="900" height="300" rx="10" fill="url(#bg)"/>
+  <rect width="900" height="300" rx="10" fill="url(#glow)"/>
+  <path d="M0 214 Q200 202 420 218 T900 210 V248 H0 Z" fill="#101823" opacity="0.8"/>
+  <rect y="248" width="900" height="52" fill="url(#gnd)"/>
+  <rect y="248" width="900" height="1.5" fill="#3a4654"/>
+
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 0;4.256 -2.128;-4.256 2.128;2.128 0;0 0;0 0;4.256 -2.128;-4.256 2.128;2.128 0;0 0;0 0;4.256 -2.128;-4.256 2.128;2.128 0;0 0;0 0;4.256 -2.128;-4.256 2.128;2.128 0;0 0;0 0" keyTimes="0;0.3;0.312;0.324;0.336;0.35;0.4;0.412;0.424;0.436;0.45;0.5;0.512;0.524;0.536;0.55;0.6;0.612;0.624;0.636;0.65;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    <line x1="557.924" y1="158.226" x2="756.504" y2="158.226" stroke="#dfeaff" stroke-width="1.053" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.445;0;0;0.445;0;0;0.445;0;0;0.445;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line><line x1="431.836" y1="59.314" x2="649.503" y2="59.314" stroke="#dfeaff" stroke-width="1.237" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.482;0;0;0.482;0;0;0.482;0;0;0.482;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line><line x1="354.268" y1="162.617" x2="566.033" y2="162.617" stroke="#dfeaff" stroke-width="1.068" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.41;0;0;0.41;0;0;0.41;0;0;0.41;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line><line x1="380.863" y1="152.78" x2="532.682" y2="152.78" stroke="#dfeaff" stroke-width="1.76" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.177;0;0;0.177;0;0;0.177;0;0;0.177;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line><line x1="313.296" y1="177.812" x2="529.978" y2="177.812" stroke="#dfeaff" stroke-width="1.788" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.17;0;0;0.17;0;0;0.17;0;0;0.17;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line><line x1="209.423" y1="133.706" x2="297.267" y2="133.706" stroke="#dfeaff" stroke-width="0.868" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.314;0;0;0.314;0;0;0.314;0;0;0.314;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line><line x1="255.853" y1="76.05" x2="364.025" y2="76.05" stroke="#dfeaff" stroke-width="1.66" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.459;0;0;0.459;0;0;0.459;0;0;0.459;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line><line x1="513.276" y1="109.604" x2="614.588" y2="109.604" stroke="#dfeaff" stroke-width="1.236" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.42;0;0;0.42;0;0;0.42;0;0;0.42;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line><line x1="435.178" y1="113.298" x2="626.918" y2="113.298" stroke="#dfeaff" stroke-width="1.796" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.414;0;0;0.414;0;0;0.414;0;0;0.414;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line><line x1="722.866" y1="161.88" x2="780.267" y2="161.88" stroke="#dfeaff" stroke-width="1.93" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.183;0;0;0.183;0;0;0.183;0;0;0.183;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line><line x1="317.84" y1="172.182" x2="523.329" y2="172.182" stroke="#dfeaff" stroke-width="1.117" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.283;0;0;0.283;0;0;0.283;0;0;0.283;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line><line x1="238.867" y1="86.333" x2="383.039" y2="86.333" stroke="#dfeaff" stroke-width="1.688" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.208;0;0;0.208;0;0;0.208;0;0;0.208;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line><line x1="604.283" y1="167.917" x2="688.942" y2="167.917" stroke="#dfeaff" stroke-width="1.232" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.49;0;0;0.49;0;0;0.49;0;0;0.49;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line><line x1="301.974" y1="148.167" x2="402.757" y2="148.167" stroke="#dfeaff" stroke-width="1.869" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.244;0;0;0.244;0;0;0.244;0;0;0.244;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line><line x1="706.985" y1="147.877" x2="891.457" y2="147.877" stroke="#dfeaff" stroke-width="1.682" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.313;0;0;0.313;0;0;0.313;0;0;0.313;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line><line x1="393.835" y1="89.585" x2="449.261" y2="89.585" stroke="#dfeaff" stroke-width="1.29" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.14;0;0;0.14;0;0;0.14;0;0;0.14;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line><line x1="386.951" y1="93.335" x2="486.373" y2="93.335" stroke="#dfeaff" stroke-width="1.38" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.2;0;0;0.2;0;0;0.2;0;0;0.2;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line><line x1="711.668" y1="172.025" x2="886.742" y2="172.025" stroke="#dfeaff" stroke-width="1.141" stroke-linecap="round" opacity="0"><animate attributeName="opacity" values="0;0;0.445;0;0;0.445;0;0;0.445;0;0;0.445;0;0" keyTimes="0;0.25;0.29;0.34;0.35;0.39;0.44;0.45;0.49;0.54;0.55;0.59;0.64;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></line>
+    <circle cx="172.136" cy="246" r="2.028" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="172.136;172.136;143.382;143.382" keyTimes="0;0.3;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;209.66899999999998;231.4676;231.4676" keyTimes="0;0.3;0.42;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="2.028;2.028;5.2728;5.2728" keyTimes="0;0.3;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.3;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle><circle cx="100.512" cy="246" r="2.497" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="100.512;100.512;19.427000000000007;19.427000000000007" keyTimes="0;0.4;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;202.09199999999998;228.4368;228.4368" keyTimes="0;0.4;0.52;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="2.497;2.497;6.4921999999999995;6.4921999999999995" keyTimes="0;0.4;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.4;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle><circle cx="185.685" cy="246" r="1.381" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="185.685;185.685;112.559;112.559" keyTimes="0;0.5;0.78;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;201.461;228.1844;228.1844" keyTimes="0;0.5;0.62;0.78;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.381;1.381;3.5906000000000002;3.5906000000000002" keyTimes="0;0.5;0.78;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.5;0.78;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle><circle cx="103.12" cy="246" r="1.723" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="103.12;103.12;63.36300000000001;63.36300000000001" keyTimes="0;0.6;0.88;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;209.889;231.5556;231.5556" keyTimes="0;0.6;0.72;0.88;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.723;1.723;4.4798;4.4798" keyTimes="0;0.6;0.88;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.6;0.88;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle><circle cx="189.702" cy="246" r="2.842" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="189.702;189.702;150.13;150.13" keyTimes="0;0.3;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;209.10399999999998;231.2416;231.2416" keyTimes="0;0.3;0.42;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="2.842;2.842;7.389200000000001;7.389200000000001" keyTimes="0;0.3;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.3;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle><circle cx="158.665" cy="246" r="1.574" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="158.665;158.665;83.8;83.8" keyTimes="0;0.4;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;214.526;233.4104;233.4104" keyTimes="0;0.4;0.52;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.574;1.574;4.0924000000000005;4.0924000000000005" keyTimes="0;0.4;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.4;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle><circle cx="132.292" cy="246" r="3.241" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="132.292;132.292;59.108000000000004;59.108000000000004" keyTimes="0;0.5;0.78;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;218.72;235.088;235.088" keyTimes="0;0.5;0.62;0.78;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="3.241;3.241;8.4266;8.4266" keyTimes="0;0.5;0.78;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.5;0.78;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle><circle cx="96.424" cy="246" r="2.547" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="96.424;96.424;3.5660000000000025;3.5660000000000025" keyTimes="0;0.6;0.88;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;209.515;231.406;231.406" keyTimes="0;0.6;0.72;0.88;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="2.547;2.547;6.6222;6.6222" keyTimes="0;0.6;0.88;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.6;0.88;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle><circle cx="133.479" cy="246" r="1.87" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="133.479;133.479;66.08400000000002;66.08400000000002" keyTimes="0;0.3;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;226.285;238.114;238.114" keyTimes="0;0.3;0.42;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.87;1.87;4.862;4.862" keyTimes="0;0.3;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.3;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle><circle cx="145.245" cy="246" r="2.817" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="145.245;145.245;48.185;48.185" keyTimes="0;0.4;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;217.358;234.5432;234.5432" keyTimes="0;0.4;0.52;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="2.817;2.817;7.3242;7.3242" keyTimes="0;0.4;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.4;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle><circle cx="79.126" cy="246" r="1.297" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="79.126;79.126;45.163000000000004;45.163000000000004" keyTimes="0;0.5;0.78;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;216.329;234.1316;234.1316" keyTimes="0;0.5;0.62;0.78;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.297;1.297;3.3722;3.3722" keyTimes="0;0.5;0.78;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.5;0.78;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle><circle cx="153.958" cy="246" r="2.812" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="153.958;153.958;72.635;72.635" keyTimes="0;0.6;0.88;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;207.712;230.6848;230.6848" keyTimes="0;0.6;0.72;0.88;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="2.812;2.812;7.3111999999999995;7.3111999999999995" keyTimes="0;0.6;0.88;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.6;0.88;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle><circle cx="185.074" cy="246" r="2.195" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="185.074;185.074;149.98600000000002;149.98600000000002" keyTimes="0;0.3;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;220.494;235.7976;235.7976" keyTimes="0;0.3;0.42;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="2.195;2.195;5.707;5.707" keyTimes="0;0.3;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.3;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle><circle cx="162.831" cy="246" r="2.209" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="162.831;162.831;94.75999999999999;94.75999999999999" keyTimes="0;0.4;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;236.558;242.2232;242.2232" keyTimes="0;0.4;0.52;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="2.209;2.209;5.7434;5.7434" keyTimes="0;0.4;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.4;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle><circle cx="83.52" cy="246" r="1.293" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="83.52;83.52;30.301999999999992;30.301999999999992" keyTimes="0;0.5;0.78;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;233.582;241.0328;241.0328" keyTimes="0;0.5;0.62;0.78;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.293;1.293;3.3618;3.3618" keyTimes="0;0.5;0.78;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.5;0.78;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle><circle cx="162.682" cy="246" r="1.947" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="162.682;162.682;70.29499999999999;70.29499999999999" keyTimes="0;0.6;0.88;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;214.123;233.2492;233.2492" keyTimes="0;0.6;0.72;0.88;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.947;1.947;5.062200000000001;5.062200000000001" keyTimes="0;0.6;0.88;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.6;0.88;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle><circle cx="179.732" cy="246" r="2.606" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="179.732;179.732;152.49099999999999;152.49099999999999" keyTimes="0;0.3;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;232.682;240.6728;240.6728" keyTimes="0;0.3;0.42;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="2.606;2.606;6.7756;6.7756" keyTimes="0;0.3;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.3;0.58;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle><circle cx="180.175" cy="246" r="2.998" fill="#9aa4b0" opacity="0">
+      <animate attributeName="cx" values="180.175;180.175;75.20300000000002;75.20300000000002" keyTimes="0;0.4;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="246;246;232.982;240.7928;240.7928" keyTimes="0;0.4;0.52;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="2.998;2.998;7.7948;7.7948" keyTimes="0;0.4;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0;0" keyTimes="0;0.4;0.68;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+
+    <g transform="translate(116 248) scale(1) translate(-116 -248)">
+     <ellipse cx="116" cy="250" rx="78" ry="6" fill="#000" opacity="0.5" filter="url(#soft)"></ellipse>
+     <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;6 0;0 0;-6 0;0 0" keyTimes="0;0.25;0.5;0.75;1" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1" dur="1.3s" repeatCount="indefinite"/>
+      <g>
+      
+      <ellipse cx="125" cy="150" rx="100" ry="125" fill="url(#aura)" opacity="0.8"><animate attributeName="opacity" values="0.5;1;0.5" keyTimes="0;0.5;1" dur="0.8s" begin="0s" repeatCount="indefinite"/></ellipse>
+      <ellipse cx="176.867" cy="220.359" rx="3.36" ry="13.441" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="220.359;130.359" dur="1.423s" begin="0.897s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="1.423s" begin="0.897s" repeatCount="indefinite"/>
+        </ellipse><ellipse cx="107.737" cy="160.457" rx="2.486" ry="9.943" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="160.457;70.457" dur="1.527s" begin="0.028s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="1.527s" begin="0.028s" repeatCount="indefinite"/>
+        </ellipse><ellipse cx="153.503" cy="209.362" rx="3.056" ry="12.226" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="209.362;119.362" dur="1.467s" begin="1.304s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="1.467s" begin="1.304s" repeatCount="indefinite"/>
+        </ellipse><ellipse cx="141.159" cy="210.796" rx="2.363" ry="9.45" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="210.796;120.796" dur="1.843s" begin="1.214s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="1.843s" begin="1.214s" repeatCount="indefinite"/>
+        </ellipse><ellipse cx="102.092" cy="140.258" rx="4.021" ry="16.085" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="140.258;50.258" dur="1.664s" begin="1.414s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="1.664s" begin="1.414s" repeatCount="indefinite"/>
+        </ellipse><ellipse cx="174.961" cy="190.695" rx="2.507" ry="10.028" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="190.695;100.695" dur="1.437s" begin="1.359s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="1.437s" begin="1.359s" repeatCount="indefinite"/>
+        </ellipse><ellipse cx="128.528" cy="142.046" rx="2.817" ry="11.27" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="142.046;52.046" dur="1.554s" begin="0.814s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="1.554s" begin="0.814s" repeatCount="indefinite"/>
+        </ellipse><ellipse cx="196.757" cy="137.635" rx="3.209" ry="12.838" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="137.635;47.635" dur="1.299s" begin="0.604s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="1.299s" begin="0.604s" repeatCount="indefinite"/>
+        </ellipse><ellipse cx="164.156" cy="215.117" rx="2.197" ry="8.789" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="215.117;125.117" dur="1.414s" begin="0.767s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="1.414s" begin="0.767s" repeatCount="indefinite"/>
+        </ellipse><ellipse cx="134.115" cy="221.832" rx="3.005" ry="12.019" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="221.832;131.832" dur="1.787s" begin="0.188s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="1.787s" begin="0.188s" repeatCount="indefinite"/>
+        </ellipse><ellipse cx="166.774" cy="188.875" rx="2.385" ry="9.542" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="188.875;98.875" dur="1.78s" begin="1.136s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="1.78s" begin="1.136s" repeatCount="indefinite"/>
+        </ellipse><ellipse cx="202.173" cy="226.813" rx="1.84" ry="7.358" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="226.813;136.813" dur="2.296s" begin="1.757s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="2.296s" begin="1.757s" repeatCount="indefinite"/>
+        </ellipse><ellipse cx="187.729" cy="124.322" rx="2.106" ry="8.426" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="124.322;34.322" dur="2.014s" begin="0.547s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="2.014s" begin="0.547s" repeatCount="indefinite"/>
+        </ellipse><ellipse cx="80.675" cy="212.422" rx="2.084" ry="8.338" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="212.422;122.422" dur="1.527s" begin="1.431s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="1.527s" begin="1.431s" repeatCount="indefinite"/>
+        </ellipse><ellipse cx="70.687" cy="224.205" rx="3.251" ry="13.003" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="224.205;134.205" dur="2.169s" begin="1.887s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="2.169s" begin="1.887s" repeatCount="indefinite"/>
+        </ellipse><ellipse cx="99.554" cy="197.245" rx="3.904" ry="15.617" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="197.245;107.245" dur="1.703s" begin="0.524s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="1.703s" begin="0.524s" repeatCount="indefinite"/>
+        </ellipse><ellipse cx="206.311" cy="174.094" rx="1.8" ry="7.2" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="174.094;84.094" dur="1.718s" begin="0.954s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="1.718s" begin="0.954s" repeatCount="indefinite"/>
+        </ellipse><ellipse cx="138.125" cy="177.885" rx="2.512" ry="10.049" fill="#ffb52e" opacity="0" filter="url(#soft)">
+        <animate attributeName="cy" values="177.885;87.885" dur="2.196s" begin="0.498s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="2.196s" begin="0.498s" repeatCount="indefinite"/>
+        </ellipse>
+      <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 0;-10 0;11 0;4 0;11 0;4 0;11 0;4 0;11 0;11 0;0 0;0 0" keyTimes="0;0.12;0.24;0.3;0.355;0.4;0.455;0.5;0.555;0.6;0.7;0.9;1" calcMode="spline" keySplines="0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+
+      <!-- back arm, cocked -->
+      <path d="M112 116 L88 140 L108 152" fill="none" stroke="url(#armG)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="110" cy="153" rx="8" ry="7.5" fill="url(#fistG)" stroke="#000" stroke-width="1"/>
+
+      <!-- legs -->
+      <path d="M118 196 L90 222 L60 244" fill="none" stroke="#14151c" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M136 196 L166 218 L170 243" fill="none" stroke="url(#armG)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M121 200 L95 224 M139 200 L166 220" fill="none" stroke="#fff" stroke-opacity="0.14" stroke-width="3" stroke-linecap="round"/>
+      <path d="M52 249 L82 249 L80 242 L60 240 Z" fill="#3d2a1a"/>
+      <path d="M160 249 L190 249 L188 243 L168 241 Z" fill="#3d2a1a"/>
+
+      <!-- shorts -->
+      <path d="M108 174 L146 172 L154 202 L140 208 L128 197 L116 210 L98 205 Z" fill="url(#shorts)"/>
+      <path d="M128 197 L130 175" stroke="#000" stroke-width="1.2" opacity="0.4"/>
+
+      <!-- torso -->
+      <path d="M107 110 L148 106 L141 176 L111 178 Z" fill="url(#skin)"/>
+      <path d="M112 118 q10 12 22 2 M110 134 q12 8 26 0" fill="none" stroke="#7a4a30" stroke-width="1.4" opacity="0.45"/>
+      <path d="M110 144 q12 6 24 0 M111 156 q12 6 26 0" fill="none" stroke="#7a4a30" stroke-width="1.2" opacity="0.4"/>
+      <path d="M118 108 Q130 100 142 106" fill="none" stroke="#7a4a30" stroke-width="1.2" opacity="0.4"/>
+      
+      <g fill="#07070b" opacity="0.92">
+        <path d="M108 112 Q122 124 112 140 Q128 148 116 164 L121 178 L111 178 L108 150 Q116 136 108 124 Z"/>
+        <path d="M148 108 Q138 124 144 140 Q134 150 140 166 L142 176 Q150 150 146 138 Q154 124 148 108 Z"/>
+        <path d="M126 112 L130 124 L124 128 L132 138 L126 146" fill="none" stroke="#07070b" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M120 150 q8 4 14 -2 M118 160 q9 5 17 -2" fill="none" stroke="#07070b" stroke-width="2.4" stroke-linecap="round"/>
+      </g>
+      <path d="M124 122 L138 138 M138 122 L124 138" stroke="#d9a98a" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+      <path d="M108 166 L143 164 L142 174 L110 177 Z" fill="#2a0d10"/>
+      <path d="M108 170 L143 168" stroke="#000" stroke-width="1"/>
+      
+
+      <!-- neck + head -->
+      <path d="M140 92 L158 92 L160 110 L138 110 Z" fill="#c58e66"/>
+      <circle cx="153" cy="86" r="19" fill="url(#skin)"/>
+      <path d="M134 80 Q132 94 140 100 L144 88 Z" fill="#14110f"/>
+      <ellipse cx="156" cy="80" rx="19" ry="6" fill="#000" opacity="0.28"/>
+      <path d="M156 79 L169 83" stroke="#14110f" stroke-width="2.4" stroke-linecap="round"/>
+      <ellipse cx="163" cy="86" rx="3.4" ry="2.1" fill="#fafafa"/><circle cx="164.4" cy="86" r="1.7" fill="#111"/>
+      <path d="M162 91.5 L162 96.5 M160 93 L164 93 M160 95 L164 95" stroke="#8a3b2c" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M171 88 q3 3 0 5.5" fill="none" stroke="#a9704a" stroke-width="1.2"/>
+      <rect x="159" y="99" width="11" height="4.2" rx="1.8" fill="#f1f1f1" stroke="#6e2a1b" stroke-width="0.9"/><path d="M159.5 101.1 H169.5" stroke="#6e2a1b" stroke-width="0.7"/>
+      <path d="M146 100 Q154 108 168 104" fill="none" stroke="#000" stroke-width="2" opacity="0.15"/>
+
+      <!-- straw hat -->
+      <ellipse cx="153" cy="71" rx="44" ry="8" fill="#7a5a1f"/>
+      <ellipse cx="153" cy="69" rx="44" ry="8" fill="url(#straw)"/>
+      <path d="M121 68 Q153 28 187 68 Z" fill="url(#straw)"/>
+      <path d="M122 66 Q153 55 186 66 L186 60 Q153 47 122 60 Z" fill="#a8241d"/>
+      <path d="M128 52 Q153 40 178 52 M134 45 Q153 36 172 45" fill="none" stroke="#b08c3a" stroke-width="1" opacity="0.5"/>
+
+      <!-- shoulder + punching arm -->
+      <circle cx="146" cy="116" r="14.955" fill="url(#armG)"/>
+      <path d="M148 116 L149.333 116 L150.667 116 L152 116 L153.333 116 L154.667 116 L156 116" fill="none" stroke="#000" stroke-width="18.242" stroke-linecap="round" stroke-linejoin="round"><animate attributeName="d" values="M148 116 L149.333 116 L150.667 116 L152 116 L153.333 116 L154.667 116 L156 116;M148 116 L149.333 116 L150.667 116 L152 116 L153.333 116 L154.667 116 L156 116;M148 116 L148.167 116 L148.333 116 L148.5 116 L148.667 116 L148.833 116 L149 116;M148 116 L187.083 99.995 L226.167 139.51 L265.25 90 L304.333 139.51 L343.417 99.995 L382.5 138;M148 116 L228.4 102.457 L308.8 135.893 L389.2 94 L469.6 135.893 L550 102.457 L630.4 98;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L204.833 109.844 L261.667 125.042 L318.5 106 L375.333 125.042 L432.167 109.844 L489 108;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L204.833 109.844 L261.667 125.042 L318.5 106 L375.333 125.042 L432.167 109.844 L489 124;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L204.833 109.844 L261.667 125.042 L318.5 106 L375.333 125.042 L432.167 109.844 L489 108;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L210.517 106.151 L273.033 130.467 L335.55 100 L398.067 130.467 L460.583 106.151 L523.1 106;M148 116 L149.333 116 L150.667 116 L152 116 L153.333 116 L154.667 116 L156 116;M148 116 L149.333 116 L150.667 116 L152 116 L153.333 116 L154.667 116 L156 116" keyTimes="0;0.12;0.24;0.262;0.282;0.3;0.33;0.355;0.4;0.43;0.455;0.5;0.53;0.555;0.6;0.7;0.76;0.9;1" calcMode="spline" keySplines="0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1" dur="1.48s" begin="0s" repeatCount="indefinite"/></path>
+    <path d="M148 116 L149.333 116 L150.667 116 L152 116 L153.333 116 L154.667 116 L156 116" fill="none" stroke="#1d1f29" stroke-width="15.742" stroke-linecap="round" stroke-linejoin="round"><animate attributeName="d" values="M148 116 L149.333 116 L150.667 116 L152 116 L153.333 116 L154.667 116 L156 116;M148 116 L149.333 116 L150.667 116 L152 116 L153.333 116 L154.667 116 L156 116;M148 116 L148.167 116 L148.333 116 L148.5 116 L148.667 116 L148.833 116 L149 116;M148 116 L187.083 99.995 L226.167 139.51 L265.25 90 L304.333 139.51 L343.417 99.995 L382.5 138;M148 116 L228.4 102.457 L308.8 135.893 L389.2 94 L469.6 135.893 L550 102.457 L630.4 98;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L204.833 109.844 L261.667 125.042 L318.5 106 L375.333 125.042 L432.167 109.844 L489 108;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L204.833 109.844 L261.667 125.042 L318.5 106 L375.333 125.042 L432.167 109.844 L489 124;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L204.833 109.844 L261.667 125.042 L318.5 106 L375.333 125.042 L432.167 109.844 L489 108;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L210.517 106.151 L273.033 130.467 L335.55 100 L398.067 130.467 L460.583 106.151 L523.1 106;M148 116 L149.333 116 L150.667 116 L152 116 L153.333 116 L154.667 116 L156 116;M148 116 L149.333 116 L150.667 116 L152 116 L153.333 116 L154.667 116 L156 116" keyTimes="0;0.12;0.24;0.262;0.282;0.3;0.33;0.355;0.4;0.43;0.455;0.5;0.53;0.555;0.6;0.7;0.76;0.9;1" calcMode="spline" keySplines="0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1" dur="1.48s" begin="0s" repeatCount="indefinite"/></path>
+    <path d="M148 116 L149.333 116 L150.667 116 L152 116 L153.333 116 L154.667 116 L156 116" fill="none" stroke="#7c8199" stroke-opacity="0.55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 -3.778)"><animate attributeName="d" values="M148 116 L149.333 116 L150.667 116 L152 116 L153.333 116 L154.667 116 L156 116;M148 116 L149.333 116 L150.667 116 L152 116 L153.333 116 L154.667 116 L156 116;M148 116 L148.167 116 L148.333 116 L148.5 116 L148.667 116 L148.833 116 L149 116;M148 116 L187.083 99.995 L226.167 139.51 L265.25 90 L304.333 139.51 L343.417 99.995 L382.5 138;M148 116 L228.4 102.457 L308.8 135.893 L389.2 94 L469.6 135.893 L550 102.457 L630.4 98;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L204.833 109.844 L261.667 125.042 L318.5 106 L375.333 125.042 L432.167 109.844 L489 108;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L204.833 109.844 L261.667 125.042 L318.5 106 L375.333 125.042 L432.167 109.844 L489 124;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L204.833 109.844 L261.667 125.042 L318.5 106 L375.333 125.042 L432.167 109.844 L489 108;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L261.667 107.382 L375.333 128.659 L489 102 L602.667 128.659 L716.333 107.382 L830 116;M148 116 L210.517 106.151 L273.033 130.467 L335.55 100 L398.067 130.467 L460.583 106.151 L523.1 106;M148 116 L149.333 116 L150.667 116 L152 116 L153.333 116 L154.667 116 L156 116;M148 116 L149.333 116 L150.667 116 L152 116 L153.333 116 L154.667 116 L156 116" keyTimes="0;0.12;0.24;0.262;0.282;0.3;0.33;0.355;0.4;0.43;0.455;0.5;0.53;0.555;0.6;0.7;0.76;0.9;1" calcMode="spline" keySplines="0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1" dur="1.48s" begin="0s" repeatCount="indefinite"/></path>
+      
+      <g filter="url(#mb)" opacity="0.17">
+      <animateTransform attributeName="transform" type="translate" values="156 116;156 116;136 116;382.5 138;630.4 98;830 116;830 116;489 108;830 116;830 116;489 124;830 116;830 116;489 108;830 116;830 116;523.1 106;156 116;156 116" keyTimes="0;0.12;0.24;0.262;0.282;0.3;0.33;0.355;0.4;0.43;0.455;0.5;0.53;0.555;0.6;0.7;0.76;0.9;1" calcMode="spline" keySplines="0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1" dur="1.48s" begin="0.088s" repeatCount="indefinite"/>
+      <g><animateTransform attributeName="transform" type="scale" values="1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1" keyTimes="0;0.12;0.24;0.262;0.282;0.3;0.33;0.355;0.4;0.43;0.455;0.5;0.53;0.555;0.6;0.7;0.76;0.9;1" calcMode="spline" keySplines="0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1" dur="1.48s" begin="0.088s" repeatCount="indefinite"/>
+        <ellipse rx="22.563" ry="18.461" fill="#2a2c38"/></g>
+    </g><g filter="url(#mb)" opacity="0.196">
+      <animateTransform attributeName="transform" type="translate" values="156 116;156 116;136 116;382.5 138;630.4 98;830 116;830 116;489 108;830 116;830 116;489 124;830 116;830 116;489 108;830 116;830 116;523.1 106;156 116;156 116" keyTimes="0;0.12;0.24;0.262;0.282;0.3;0.33;0.355;0.4;0.43;0.455;0.5;0.53;0.555;0.6;0.7;0.76;0.9;1" calcMode="spline" keySplines="0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1" dur="1.48s" begin="0.066s" repeatCount="indefinite"/>
+      <g><animateTransform attributeName="transform" type="scale" values="1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1" keyTimes="0;0.12;0.24;0.262;0.282;0.3;0.33;0.355;0.4;0.43;0.455;0.5;0.53;0.555;0.6;0.7;0.76;0.9;1" calcMode="spline" keySplines="0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1" dur="1.48s" begin="0.066s" repeatCount="indefinite"/>
+        <ellipse rx="22.563" ry="18.461" fill="#2a2c38"/></g>
+    </g><g filter="url(#mb)" opacity="0.24">
+      <animateTransform attributeName="transform" type="translate" values="156 116;156 116;136 116;382.5 138;630.4 98;830 116;830 116;489 108;830 116;830 116;489 124;830 116;830 116;489 108;830 116;830 116;523.1 106;156 116;156 116" keyTimes="0;0.12;0.24;0.262;0.282;0.3;0.33;0.355;0.4;0.43;0.455;0.5;0.53;0.555;0.6;0.7;0.76;0.9;1" calcMode="spline" keySplines="0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1" dur="1.48s" begin="0.044s" repeatCount="indefinite"/>
+      <g><animateTransform attributeName="transform" type="scale" values="1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1" keyTimes="0;0.12;0.24;0.262;0.282;0.3;0.33;0.355;0.4;0.43;0.455;0.5;0.53;0.555;0.6;0.7;0.76;0.9;1" calcMode="spline" keySplines="0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1" dur="1.48s" begin="0.044s" repeatCount="indefinite"/>
+        <ellipse rx="22.563" ry="18.461" fill="#2a2c38"/></g>
+    </g><g filter="url(#mb)" opacity="0.34">
+      <animateTransform attributeName="transform" type="translate" values="156 116;156 116;136 116;382.5 138;630.4 98;830 116;830 116;489 108;830 116;830 116;489 124;830 116;830 116;489 108;830 116;830 116;523.1 106;156 116;156 116" keyTimes="0;0.12;0.24;0.262;0.282;0.3;0.33;0.355;0.4;0.43;0.455;0.5;0.53;0.555;0.6;0.7;0.76;0.9;1" calcMode="spline" keySplines="0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1" dur="1.48s" begin="0.022s" repeatCount="indefinite"/>
+      <g><animateTransform attributeName="transform" type="scale" values="1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1" keyTimes="0;0.12;0.24;0.262;0.282;0.3;0.33;0.355;0.4;0.43;0.455;0.5;0.53;0.555;0.6;0.7;0.76;0.9;1" calcMode="spline" keySplines="0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1" dur="1.48s" begin="0.022s" repeatCount="indefinite"/>
+        <ellipse rx="22.563" ry="18.461" fill="#2a2c38"/></g>
+    </g>
+      <g>
+      <animateTransform attributeName="transform" type="translate" values="156 116;156 116;136 116;382.5 138;630.4 98;830 116;830 116;489 108;830 116;830 116;489 124;830 116;830 116;489 108;830 116;830 116;523.1 106;156 116;156 116" keyTimes="0;0.12;0.24;0.262;0.282;0.3;0.33;0.355;0.4;0.43;0.455;0.5;0.53;0.555;0.6;0.7;0.76;0.9;1" calcMode="spline" keySplines="0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <g><animateTransform attributeName="transform" type="scale" values="1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1" keyTimes="0;0.12;0.24;0.262;0.282;0.3;0.33;0.355;0.4;0.43;0.455;0.5;0.53;0.555;0.6;0.7;0.76;0.9;1" calcMode="spline" keySplines="0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1;0.35 0 0.15 1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+        <ellipse rx="22.153" ry="20.512" fill="url(#fistG)" stroke="#000" stroke-width="1.2"/>
+      <path d="M5.128 -12.717 q14.358 2.051 15.384 9.23
+               M6.154 -4.102 q13.333 1.641 14.769 8.615
+               M6.154 4.102 q12.307 2.051 13.538 8.205"
+            fill="none" stroke="#000" stroke-width="1.4" stroke-linecap="round" opacity="0.8"/>
+      <ellipse cx="-6.154" cy="-9.23" rx="9.23" ry="4.102" fill="#fff" opacity="0.3"/>
+        
+      </g>
+    </g>
+      </g>
+      </g>
+     </g>
+    </g>
+
+    <circle cx="863.153" cy="116" r="94.429" fill="url(#flashG)" opacity="0"><animate attributeName="opacity" values="0;0;0.7590856114781275;0;0;0.7590856114781275;0;0;0.7590856114781275;0;0;0.7590856114781275;0;0" keyTimes="0;0.294;0.3;0.37;0.394;0.4;0.47;0.494;0.5;0.57;0.594;0.6;0.67;1" dur="1.48s" begin="0s" repeatCount="indefinite"/></circle><ellipse cx="863.153" cy="116" rx="0" ry="0" fill="none" stroke="#e9f2ff" stroke-width="2.4" opacity="0">
+      <animate attributeName="rx" values="0;0;71.909;71.909" keyTimes="0;0.3;0.43;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="0;0;131.297;131.297" keyTimes="0;0.3;0.43;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;0.75;0;0" keyTimes="0;0.299;0.3;0.43;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </ellipse><ellipse cx="863.153" cy="116" rx="0" ry="0" fill="none" stroke="#e9f2ff" stroke-width="1.6" opacity="0">
+      <animate attributeName="rx" values="0;0;104.267;104.267" keyTimes="0;0.325;0.455;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="0;0;190.38;190.38" keyTimes="0;0.325;0.455;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;0.5;0;0" keyTimes="0;0.324;0.325;0.455;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </ellipse><ellipse cx="863.153" cy="116" rx="0" ry="0" fill="none" stroke="#e9f2ff" stroke-width="2.4" opacity="0">
+      <animate attributeName="rx" values="0;0;71.909;71.909" keyTimes="0;0.4;0.53;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="0;0;131.297;131.297" keyTimes="0;0.4;0.53;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;0.75;0;0" keyTimes="0;0.399;0.4;0.53;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </ellipse><ellipse cx="863.153" cy="116" rx="0" ry="0" fill="none" stroke="#e9f2ff" stroke-width="1.6" opacity="0">
+      <animate attributeName="rx" values="0;0;104.267;104.267" keyTimes="0;0.425;0.555;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="0;0;190.38;190.38" keyTimes="0;0.425;0.555;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;0.5;0;0" keyTimes="0;0.424;0.425;0.555;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </ellipse><ellipse cx="863.153" cy="116" rx="0" ry="0" fill="none" stroke="#e9f2ff" stroke-width="2.4" opacity="0">
+      <animate attributeName="rx" values="0;0;71.909;71.909" keyTimes="0;0.5;0.63;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="0;0;131.297;131.297" keyTimes="0;0.5;0.63;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;0.75;0;0" keyTimes="0;0.499;0.5;0.63;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </ellipse><ellipse cx="863.153" cy="116" rx="0" ry="0" fill="none" stroke="#e9f2ff" stroke-width="1.6" opacity="0">
+      <animate attributeName="rx" values="0;0;104.267;104.267" keyTimes="0;0.525;0.655;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="0;0;190.38;190.38" keyTimes="0;0.525;0.655;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;0.5;0;0" keyTimes="0;0.524;0.525;0.655;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </ellipse><ellipse cx="863.153" cy="116" rx="0" ry="0" fill="none" stroke="#e9f2ff" stroke-width="2.4" opacity="0">
+      <animate attributeName="rx" values="0;0;71.909;71.909" keyTimes="0;0.6;0.73;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="0;0;131.297;131.297" keyTimes="0;0.6;0.73;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;0.75;0;0" keyTimes="0;0.599;0.6;0.73;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </ellipse><ellipse cx="863.153" cy="116" rx="0" ry="0" fill="none" stroke="#e9f2ff" stroke-width="1.6" opacity="0">
+      <animate attributeName="rx" values="0;0;104.267;104.267" keyTimes="0;0.625;0.755;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="0;0;190.38;190.38" keyTimes="0;0.625;0.755;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;0.5;0;0" keyTimes="0;0.624;0.625;0.755;1" dur="1.48s" begin="0s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <rect width="900" height="300" rx="10" fill="url(#vig)" pointer-events="none"/>
+  <text x="22" y="286" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#8b98a8" letter-spacing="0.5">4,500 contributions  ·  Gear 4 · Snakeman</text>
+</svg>
