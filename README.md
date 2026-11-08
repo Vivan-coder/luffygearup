@@ -1,6 +1,12 @@
 # Luffy Contribution Punch
 
-An animated SVG for your GitHub profile. Luffy throws a Gum-Gum Pistol, and **your contributions power him up**.
+<p align="center">
+  <img src="dist/forms/showcase-gear5.svg" width="100%" alt="Luffy in Gear 5, floating and punching"/>
+</p>
+
+An animated SVG for your GitHub profile. Luffy throws a Gum-Gum Pistol, and **your contributions power him up** from Gear 1 all the way to Gear 5. It's free, takes about two minutes to set up, and updates itself every day.
+
+If you like it, a ⭐ on the repo helps other people find it.
 
 ## How it works
 
