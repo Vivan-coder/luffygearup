@@ -6,7 +6,7 @@
 
 An animated SVG for your GitHub profile. Luffy throws a Gum-Gum Pistol, and **your contributions power him up** from Gear 1 all the way to Gear 5. It's free, takes about two minutes to set up, and updates itself every day.
 
-If you like it, a ⭐ on the repo helps other people find it.
+If you like it, a star on the repo helps other people find it.
 
 ## See all six forms
 
