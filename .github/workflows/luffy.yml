@@ -24,8 +24,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USER: ${{ github.repository_owner }}
-          # Contributions per gear. Override with a repo variable: Settings > Secrets and variables > Actions > Variables > STEP
-          STEP: ${{ vars.STEP || '400' }}
         run: node generate.js
       - name: Commit SVG
         run: |
