@@ -1,13 +1,17 @@
 // Generates dist/luffy-punch.svg — Luffy throws a Gum-Gum Pistol; every contribution adds power,
-// and every 1000 contributions he unlocks the next form:
-//   0 Gear 1 · 1000 Gear 2 · 2000 Gear 3 · 3000 Gear 4 Boundman · 4000 Gear 4 Snakeman · 5000 Gear 5
+// and every STEP contributions (default 250) he unlocks the next form:
+//   0 Gear 1 · 1×STEP Gear 2 · 2×STEP Gear 3 · 3×STEP Boundman · 4×STEP Snakeman · 5×STEP Gear 5
 // Usage:
 //   GITHUB_TOKEN=xxx GITHUB_USER=name node generate.js   (real data, last 12 months)
-//   node generate.js 2350                                 (manual count, for testing)
+//   node generate.js 800                                  (manual count, for testing)
+//   STEP=500 node generate.js ...                         (contributions per gear; default 250)
 const fs = require("fs");
 const path = require("path");
 
-const SCALE = Number(process.env.GOAL || 1000); // tuning: how fast raw power rises
+// Contributions needed per gear. Gear 5 unlocks at 5 x STEP. Pick a pace you can reach:
+//   150 = casual, 250 = default (Gear 5 at 1,250 a year), 500 = very active, 1000 = hardcore.
+const STEP = Number(process.env.STEP) > 0 ? Number(process.env.STEP) : 250;
+const SCALE = Number(process.env.GOAL) > 0 ? Number(process.env.GOAL) : STEP; // how fast raw power rises (defaults to STEP)
 
 async function getContributions() {
   if (process.argv[2]) return Number(process.argv[2]);
@@ -35,23 +39,23 @@ const FORMS = [
   { min: 0, id: "g1", name: "Gear 1", skin: SKIN, limb: LIMB, fist: ["#f7d6b3", "#c58a60"], fistStroke: "#a8683f", knuckle: "#9a5e38",
     legBack: "#b27b55", hair: "#14110f", shorts: ["#26457a", "#16294a"], vest: true, s: 1, hitsMax: 2, durMul: 1, reachMul: 1, armMul: 1,
     glow: "#ff9a4d", flash: "#ffd7a8" },
-  { min: 1000, id: "g2", name: "Gear 2", skin: ["#b5584a", "#ea8a72", "#cf6a58"], limb: ["#f6a58c", "#e0795f", "#a9493c"], fist: ["#f8b39b", "#b9513f"],
+  { min: 1 * STEP, id: "g2", name: "Gear 2", skin: ["#b5584a", "#ea8a72", "#cf6a58"], limb: ["#f6a58c", "#e0795f", "#a9493c"], fist: ["#f8b39b", "#b9513f"],
     fistStroke: "#8f3a2f", knuckle: "#8a3428", legBack: "#a24a3d", hair: "#14110f", shorts: ["#26457a", "#16294a"], vest: true, s: 1,
     hitsMax: 6, durMul: 0.8, reachMul: 1.05, armMul: 1.05, fast: true, jitter: true, timing: { wind: 0.26, first: 0.28, sp: 0.04 }, glow: "#ff5a3c", flash: "#ffb199",
     steam: { n: 20, color: "#ffffff", op: 0.4, rise: 80, size: [6, 14] } },
-  { min: 2000, id: "g3", name: "Gear 3", skin: SKIN, limb: LIMB, fist: ["#f7d6b3", "#c58a60"], fistStroke: "#a8683f", knuckle: "#9a5e38",
+  { min: 2 * STEP, id: "g3", name: "Gear 3", skin: SKIN, limb: LIMB, fist: ["#f7d6b3", "#c58a60"], fistStroke: "#a8683f", knuckle: "#9a5e38",
     legBack: "#b27b55", hair: "#14110f", shorts: ["#26457a", "#16294a"], vest: true, s: 1, hitsMax: 1, durMul: 1.25, reachMul: 0.95, armMul: 1.15,
     inflate: true, fistS: 2.3, sway: true, glow: "#ffa14d", flash: "#ffd7a8",
     steam: { n: 9, color: "#ffffff", op: 0.28, rise: 55, size: [5, 10] } },
-  { min: 3000, id: "g4b", name: "Gear 4 · Boundman", skin: SKIN, limb: DARK_LIMB, fist: ["#4f5266", "#0b0c10"], fistStroke: "#000", knuckle: "#000",
+  { min: 3 * STEP, id: "g4b", name: "Gear 4 · Boundman", skin: SKIN, limb: DARK_LIMB, fist: ["#4f5266", "#0b0c10"], fistStroke: "#000", knuckle: "#000",
     legBack: "#14151c", hair: "#14110f", shorts: ["#3a1114", "#1c0709"], vest: false, tattoo: true, s: 1.04, bounce: true, fat: true,
     hitsMax: 3, durMul: 0.9, reachMul: 1.05, armMul: 1.3, glow: "#e0323c", flash: "#ff9a9a", auraC: "#d12a35",
     steam: { n: 12, color: "#d8323c", op: 0.32, rise: 60, size: [5, 11] } },
-  { min: 4000, id: "g4s", name: "Gear 4 · Snakeman", skin: SKIN, limb: DARK_LIMB, fist: ["#4f5266", "#0b0c10"], fistStroke: "#000", knuckle: "#000",
+  { min: 4 * STEP, id: "g4s", name: "Gear 4 · Snakeman", skin: SKIN, limb: DARK_LIMB, fist: ["#4f5266", "#0b0c10"], fistStroke: "#000", knuckle: "#000",
     legBack: "#14151c", hair: "#14110f", shorts: ["#3a1114", "#1c0709"], vest: false, tattoo: true, s: 1, zig: true, sway: true,
     hitsMax: 4, durMul: 0.7, reachMul: 1.15, armMul: 0.8, glow: "#ffb52e", flash: "#ffe39a", auraC: "#ffae2a",
     steam: { n: 18, color: "#ffb52e", op: 0.5, rise: 90, size: [4, 9], flame: true } },
-  { min: 5000, id: "g5", name: "Gear 5", skin: SKIN, limb: LIMB, fist: ["#f7d6b3", "#c58a60"], fistStroke: "#a8683f", knuckle: "#9a5e38",
+  { min: 5 * STEP, id: "g5", name: "Gear 5", skin: SKIN, limb: LIMB, fist: ["#f7d6b3", "#c58a60"], fistStroke: "#a8683f", knuckle: "#9a5e38",
     legBack: "#b27b55", hair: "#f4f7ff", shorts: ["#f2f6ff", "#aebbd6"], vest: false, band: "#f3ead6", s: 1, hitsMax: 4, durMul: 0.8, reachMul: 1.1, armMul: 1.1, fistMul: 1.2, float: true,
     glow: "#d5e9ff", flash: "#ffffff", auraC: "#cfe4ff", white: true },
 ];
@@ -482,7 +486,7 @@ function build(count) {
 `;
 }
 
-module.exports = { build, formFor, FORMS };
+module.exports = { build, formFor, FORMS, STEP };
 
 if (require.main === module) {
   (async () => {

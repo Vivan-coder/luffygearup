@@ -24,7 +24,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USER: ${{ github.repository_owner }}
-          GOAL: 1000
+          # Contributions per gear. Override with a repo variable: Settings > Secrets and variables > Actions > Variables > STEP
+          STEP: ${{ vars.STEP || '250' }}
         run: node generate.js
       - name: Commit SVG
         run: |
@@ -32,5 +33,12 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add dist/luffy-punch.svg
           git diff --staged --quiet || git commit -m "Update Luffy punch"
+          # Keep-alive: GitHub disables scheduled workflows after 60 days without repo activity.
+          # If the newest commit is older than 30 days, add an empty commit so the schedule keeps running.
+          LAST=$(git log -1 --format=%ct)
+          NOW=$(date +%s)
+          if [ $((NOW - LAST)) -gt $((30 * 24 * 3600)) ]; then
+            git commit --allow-empty -m "chore: keep scheduled workflow alive"
+          fi
           git pull --rebase origin main
           git push

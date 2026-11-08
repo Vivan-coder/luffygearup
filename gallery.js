@@ -1,7 +1,8 @@
 // Builds dist/forms/*.svg and dist/gallery.html — a preview of every form and growth stage.
+// Stages are expressed in multiples of STEP, so the preview matches whatever pace you configure.
 const fs = require("fs");
 const path = require("path");
-const { build, formFor } = require("./generate");
+const { build, formFor, STEP } = require("./generate");
 
 const dir = path.join(__dirname, "dist", "forms");
 fs.rmSync(dir, { recursive: true, force: true });
@@ -10,11 +11,16 @@ fs.mkdirSync(dir, { recursive: true });
 // remove stale demo files from earlier versions
 for (const f of fs.readdirSync(path.join(__dirname, "dist"))) if (/^demo-.*\.svg$/.test(f)) fs.unlinkSync(path.join(__dirname, "dist", f));
 
-const stages = [0, 250, 500, 750, 1000, 1500, 1900, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 6500];
+// stable-named files used by the README showcase
+const showcase = { "showcase-gear1": 0, "showcase-gear2": 1.9, "showcase-gear3": 2.5, "showcase-boundman": 3, "showcase-snakeman": 4, "showcase-gear5": 5 };
+for (const [name, mult] of Object.entries(showcase)) fs.writeFileSync(path.join(dir, `${name}.svg`), build(Math.round(mult * STEP)));
+
+const mults = [0, 0.25, 0.5, 0.75, 1, 1.5, 1.9, 2, 2.5, 3, 3.5, 4, 4.5, 5, 6.5];
+const stages = [...new Set(mults.map((m) => Math.round(m * STEP)))];
 const tiles = stages.map((n) => {
   const form = formFor(n);
   fs.writeFileSync(path.join(dir, `${n}.svg`), build(n));
-  const unlock = n % 1000 === 0 && n <= 5000;
+  const unlock = n === form.min;
   return `<figure class="${unlock ? "unlock" : ""}"><img src="forms/${n}.svg" alt="${form.name} at ${n}"/>
     <figcaption><b>${n.toLocaleString("en-US")}</b> contributions <span>${form.name}${unlock ? " — unlocked" : ""}</span></figcaption></figure>`;
 });
@@ -34,8 +40,8 @@ const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta n
   @media(max-width:480px){.grid{grid-template-columns:1fr}}
 </style></head><body>
 <h1>Luffy — every form, every stage</h1>
-<p>A new form unlocks every 1,000 contributions (green border). Between unlocks, each contribution still adds reach, speed, extra hits, blur, shockwave and debris.</p>
+<p>A new form unlocks every ${STEP.toLocaleString("en-US")} contributions (green border). Between unlocks, each contribution still adds reach, speed, extra hits, blur, shockwave and debris.</p>
 <div class="grid">${tiles.join("\n")}</div>
 </body></html>`;
 fs.writeFileSync(path.join(__dirname, "dist", "gallery.html"), html);
-console.log("gallery written:", stages.length, "stages");
+console.log(`gallery written: ${stages.length} stages + ${Object.keys(showcase).length} showcase files (STEP=${STEP})`);

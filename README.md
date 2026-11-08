@@ -3,16 +3,16 @@
 An animated SVG for your GitHub profile. Luffy throws a Gum-Gum Pistol, and **your contributions power him up**.
 
 - Every contribution adds a little more reach, speed, extra hits, motion blur, shockwave, dust and screen shake.
-- Every **1,000 contributions** unlocks the next form:
+- Every **STEP contributions** unlocks the next form. `STEP` defaults to **250**, so Gear 5 is at 1,250 contributions a year (about 3.4 a day). You can change the pace, see [Choose your pace](#choose-your-pace).
 
-| Contributions | Form |
-|---|---|
-| 0 | Gear 1 |
-| 1,000 | Gear 2 |
-| 2,000 | Gear 3 |
-| 3,000 | Gear 4 · Boundman |
-| 4,000 | Gear 4 · Snakeman |
-| 5,000 | Gear 5 |
+| Form | Unlocks at | With the default `STEP=250` |
+|---|---|---|
+| Gear 1 | 0 | 0 |
+| Gear 2 | 1 × STEP | 250 |
+| Gear 3 | 2 × STEP | 500 |
+| Gear 4 · Boundman | 3 × STEP | 750 |
+| Gear 4 · Snakeman | 4 × STEP | 1,000 |
+| Gear 5 | 5 × STEP | 1,250 |
 
 Each form also moves differently:
 
@@ -29,16 +29,16 @@ Each form also moves differently:
 
 <table>
 <tr>
-<td align="center"><img src="dist/forms/0.svg" width="440" alt="Gear 1"/><br/><b>Gear 1</b> · 0+</td>
-<td align="center"><img src="dist/forms/1900.svg" width="440" alt="Gear 2"/><br/><b>Gear 2</b> · 1,000+</td>
+<td align="center"><img src="dist/forms/showcase-gear1.svg" width="440" alt="Gear 1"/><br/><b>Gear 1</b></td>
+<td align="center"><img src="dist/forms/showcase-gear2.svg" width="440" alt="Gear 2"/><br/><b>Gear 2</b></td>
 </tr>
 <tr>
-<td align="center"><img src="dist/forms/2500.svg" width="440" alt="Gear 3"/><br/><b>Gear 3</b> · 2,000+</td>
-<td align="center"><img src="dist/forms/3000.svg" width="440" alt="Gear 4 Boundman"/><br/><b>Gear 4 · Boundman</b> · 3,000+</td>
+<td align="center"><img src="dist/forms/showcase-gear3.svg" width="440" alt="Gear 3"/><br/><b>Gear 3</b></td>
+<td align="center"><img src="dist/forms/showcase-boundman.svg" width="440" alt="Gear 4 Boundman"/><br/><b>Gear 4 · Boundman</b></td>
 </tr>
 <tr>
-<td align="center"><img src="dist/forms/4000.svg" width="440" alt="Gear 4 Snakeman"/><br/><b>Gear 4 · Snakeman</b> · 4,000+</td>
-<td align="center"><img src="dist/forms/5000.svg" width="440" alt="Gear 5"/><br/><b>Gear 5</b> · 5,000+</td>
+<td align="center"><img src="dist/forms/showcase-snakeman.svg" width="440" alt="Gear 4 Snakeman"/><br/><b>Gear 4 · Snakeman</b></td>
+<td align="center"><img src="dist/forms/showcase-gear5.svg" width="440" alt="Gear 5"/><br/><b>Gear 5</b></td>
 </tr>
 </table>
 
@@ -46,30 +46,50 @@ Download the repo and open `dist/gallery.html` to preview every stage.
 
 ## Use it on your profile
 
-1. **Fork** this repo (or use it as a template) and, if you want it on your profile page, name your copy exactly like your GitHub username (the special profile repo).
-2. In your fork go to **Actions → Generate Luffy punch → Run workflow**. It reads *your* contribution count (the repo owner's) and commits `dist/luffy-punch.svg`. It then re-runs daily.
-3. Add this to your profile `README.md` (replace `YOU` and `REPO`):
+1. **Fork** this repo (or use it as a template). If you want it on your profile page, add the image to your special profile repo, the one named exactly like your GitHub username.
+2. **Enable Actions in your fork.** GitHub turns off workflows, including scheduled ones, in forks until you enable them (Actions tab → *I understand my workflows, go ahead and enable them*).
+3. Go to **Actions → Generate Luffy punch → Run workflow**. It reads *your* contribution count (the repo owner's) and commits `dist/luffy-punch.svg`. It then re-runs daily.
+4. Add this to your profile `README.md` (replace `YOU` and `REPO`):
 
    ```md
    ![Luffy](https://raw.githubusercontent.com/YOU/REPO/main/dist/luffy-punch.svg)
    ```
 
-Private contributions are only counted if you enable *Include private contributions* in your profile contribution settings. The count covers the last 12 months.
+Private contributions are only counted if you enable *Include private contributions* in your profile contribution settings. The count covers the last 12 months, so a form can drop back if your activity slows down.
+
+### Keep-alive
+
+GitHub disables scheduled workflows in a repo after 60 days with no activity. The workflow guards against that: if the newest commit is older than 30 days, it adds an empty `chore: keep scheduled workflow alive` commit, so the daily schedule keeps running even when your count doesn't change.
+
+## Choose your pace
+
+`STEP` is the number of contributions per gear. Pick one you can realistically reach:
+
+| `STEP` | Gear 5 at | Good for |
+|---|---|---|
+| 150 | 750 / year | casual contributors |
+| **250** (default) | 1,250 / year | most developers |
+| 500 | 2,500 / year | very active contributors |
+| 1000 | 5,000 / year | hardcore |
+
+In your fork set it as a repository variable: **Settings → Secrets and variables → Actions → Variables → New repository variable**, name `STEP`. Locally, use `STEP=500 node generate.js 800`.
 
 ## Run locally
 
 ```bash
-node generate.js 2350      # any number, writes dist/luffy-punch.svg
+node generate.js 800       # any number, writes dist/luffy-punch.svg
 node gallery.js            # rebuilds dist/gallery.html and dist/forms/*.svg
 GITHUB_TOKEN=... GITHUB_USER=you node generate.js   # real data
+STEP=500 node gallery.js   # preview a different pace
 ```
 
 Requires Node 18+. No dependencies.
 
 ## Tuning
 
-- `GOAL` (env, default `1000`) – how fast raw power rises between forms.
-- Form thresholds live in the `FORMS` table at the top of `generate.js`.
+- `STEP` (env, default `250`): contributions per gear.
+- `GOAL` (env, defaults to `STEP`): how fast raw power (reach, speed, hits) rises.
+- Form looks and motions live in the `FORMS` table at the top of `generate.js`.
 
 ## Credits
 
