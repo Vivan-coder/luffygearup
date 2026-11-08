@@ -2,17 +2,20 @@
 
 An animated SVG for your GitHub profile. Luffy throws a Gum-Gum Pistol, and **your contributions power him up**.
 
-- Every contribution adds a little more reach, speed, extra hits, motion blur, shockwave, dust and screen shake.
-- Every **STEP contributions** unlocks the next form. `STEP` defaults to **400**, so Gear 5 is at 2,000 contributions a year (about 5.5 a day) and the six forms are spread evenly. You can change the pace, see [Choose your pace](#choose-your-pace).
+## How it works
 
-| Form | Unlocks at | With the default `STEP=400` |
-|---|---|---|
-| Gear 1 | 0 | 0 |
-| Gear 2 | 1 × STEP | 400 |
-| Gear 3 | 2 × STEP | 800 |
-| Gear 4 · Boundman | 3 × STEP | 1,200 |
-| Gear 4 · Snakeman | 4 × STEP | 1,600 |
-| Gear 5 | 5 × STEP | 2,000 |
+Luffy gets a new form **every 400 contributions**. It is the same rule for everyone.
+
+| Your contributions (last 12 months) | Luffy's form |
+|---|---|
+| 0 | Gear 1 |
+| 400 | Gear 2 |
+| 800 | Gear 3 |
+| 1,200 | Gear 4 · Boundman |
+| 1,600 | Gear 4 · Snakeman |
+| 2,000 | Gear 5 |
+
+Between forms, every contribution still makes the punch a little stronger (longer reach, faster, more hits, more blur and shockwave).
 
 Each form also moves differently:
 
@@ -44,52 +47,30 @@ Each form also moves differently:
 
 Download the repo and open `dist/gallery.html` to preview every stage.
 
-## Use it on your profile
+## Put it on your profile (3 steps)
 
-1. **Fork** this repo (or use it as a template). If you want it on your profile page, add the image to your special profile repo, the one named exactly like your GitHub username.
-2. **Enable Actions in your fork.** GitHub turns off workflows, including scheduled ones, in forks until you enable them (Actions tab → *I understand my workflows, go ahead and enable them*).
-3. Go to **Actions → Generate Luffy punch → Run workflow**. It reads *your* contribution count (the repo owner's) and commits `dist/luffy-punch.svg`. It then re-runs daily.
-4. Add this to your profile `README.md` (replace `YOU` and `REPO`):
+1. **Fork** this repo.
+2. In your fork open the **Actions** tab, click **I understand my workflows, go ahead and enable them**, then choose **Generate Luffy punch → Run workflow**. It reads *your* contributions and creates `dist/luffy-punch.svg`. It then updates itself every day.
+3. Paste this into your profile `README.md` (replace `YOU` and `REPO` with your username and your fork's name):
 
    ```md
    ![Luffy](https://raw.githubusercontent.com/YOU/REPO/main/dist/luffy-punch.svg)
    ```
 
-Private contributions are only counted if you enable *Include private contributions* in your profile contribution settings. The count covers the last 12 months, so a form can drop back if your activity slows down.
+Good to know:
+- Private contributions only count if you turn on *Include private contributions* in your profile settings.
+- The count covers the last 12 months, so your form can drop back if you slow down.
+- GitHub pauses scheduled workflows after 60 days without activity. The workflow adds a tiny commit when needed so it keeps running.
 
-### Keep-alive
-
-GitHub disables scheduled workflows in a repo after 60 days with no activity. The workflow guards against that: if the newest commit is older than 30 days, it adds an empty `chore: keep scheduled workflow alive` commit, so the daily schedule keeps running even when your count doesn't change.
-
-## Choose your pace
-
-`STEP` is the number of contributions per gear. Pick one you can realistically reach:
-
-| `STEP` | Gear 5 at | Good for |
-|---|---|---|
-| 200 | 1,000 / year | casual contributors |
-| **400** (default) | 2,000 / year | active developers |
-| 600 | 3,000 / year | very active contributors |
-| 1000 | 5,000 / year | hardcore |
-
-In your fork set it as a repository variable: **Settings → Secrets and variables → Actions → Variables → New repository variable**, name `STEP`. Locally, use `STEP=500 node generate.js 800`.
-
-## Run locally
+## Run it on your computer
 
 ```bash
-node generate.js 800       # any number, writes dist/luffy-punch.svg
-node gallery.js            # rebuilds dist/gallery.html and dist/forms/*.svg
-GITHUB_TOKEN=... GITHUB_USER=you node generate.js   # real data
-STEP=500 node gallery.js   # preview a different pace
+node generate.js 800                                # any number, writes dist/luffy-punch.svg
+GITHUB_TOKEN=... GITHUB_USER=you node generate.js   # your real count
+node gallery.js                                     # rebuilds dist/gallery.html
 ```
 
-Requires Node 18+. No dependencies.
-
-## Tuning
-
-- `STEP` (env, default `400`): contributions per gear.
-- `GOAL` (env, defaults to `STEP`): how fast raw power (reach, speed, hits) rises.
-- Form looks and motions live in the `FORMS` table at the top of `generate.js`.
+Needs Node 18 or newer. No other dependencies.
 
 ## Credits
 
