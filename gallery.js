@@ -1,5 +1,5 @@
 // Builds dist/forms/*.svg and dist/gallery.html — a preview of every form and growth stage.
-// Stages are expressed in multiples of STEP, so the preview matches whatever pace you configure.
+// Stages are multiples of the 400-contribution step, so every gear unlock is previewed.
 const fs = require("fs");
 const path = require("path");
 const { build, formFor, STEP } = require("./generate");
