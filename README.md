@@ -8,6 +8,14 @@ An animated SVG for your GitHub profile. Luffy throws a Gum-Gum Pistol, and **yo
 
 If you like it, a ⭐ on the repo helps other people find it.
 
+## See all six forms
+
+<p align="center">
+  <img src="assets/luffy-gears.gif" width="720" alt="Luffy going from Gear 1 to Gear 5"/>
+</p>
+
+<p align="center"><sub>Gear 1 → Gear 2 → Gear 3 → Gear 4 Boundman → Gear 4 Snakeman → Gear 5. Also available as <a href="assets/luffy-gears.mp4">an MP4</a> for sharing.</sub></p>
+
 ## How it works
 
 Luffy gets a new form **every 400 contributions**. It is the same rule for everyone.
