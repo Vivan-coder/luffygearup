@@ -3,16 +3,16 @@
 An animated SVG for your GitHub profile. Luffy throws a Gum-Gum Pistol, and **your contributions power him up**.
 
 - Every contribution adds a little more reach, speed, extra hits, motion blur, shockwave, dust and screen shake.
-- Every **STEP contributions** unlocks the next form. `STEP` defaults to **250**, so Gear 5 is at 1,250 contributions a year (about 3.4 a day). You can change the pace, see [Choose your pace](#choose-your-pace).
+- Every **STEP contributions** unlocks the next form. `STEP` defaults to **400**, so Gear 5 is at 2,000 contributions a year (about 5.5 a day) and the six forms are spread evenly. You can change the pace, see [Choose your pace](#choose-your-pace).
 
-| Form | Unlocks at | With the default `STEP=250` |
+| Form | Unlocks at | With the default `STEP=400` |
 |---|---|---|
 | Gear 1 | 0 | 0 |
-| Gear 2 | 1 × STEP | 250 |
-| Gear 3 | 2 × STEP | 500 |
-| Gear 4 · Boundman | 3 × STEP | 750 |
-| Gear 4 · Snakeman | 4 × STEP | 1,000 |
-| Gear 5 | 5 × STEP | 1,250 |
+| Gear 2 | 1 × STEP | 400 |
+| Gear 3 | 2 × STEP | 800 |
+| Gear 4 · Boundman | 3 × STEP | 1,200 |
+| Gear 4 · Snakeman | 4 × STEP | 1,600 |
+| Gear 5 | 5 × STEP | 2,000 |
 
 Each form also moves differently:
 
@@ -67,9 +67,9 @@ GitHub disables scheduled workflows in a repo after 60 days with no activity. Th
 
 | `STEP` | Gear 5 at | Good for |
 |---|---|---|
-| 150 | 750 / year | casual contributors |
-| **250** (default) | 1,250 / year | most developers |
-| 500 | 2,500 / year | very active contributors |
+| 200 | 1,000 / year | casual contributors |
+| **400** (default) | 2,000 / year | active developers |
+| 600 | 3,000 / year | very active contributors |
 | 1000 | 5,000 / year | hardcore |
 
 In your fork set it as a repository variable: **Settings → Secrets and variables → Actions → Variables → New repository variable**, name `STEP`. Locally, use `STEP=500 node generate.js 800`.
@@ -87,7 +87,7 @@ Requires Node 18+. No dependencies.
 
 ## Tuning
 
-- `STEP` (env, default `250`): contributions per gear.
+- `STEP` (env, default `400`): contributions per gear.
 - `GOAL` (env, defaults to `STEP`): how fast raw power (reach, speed, hits) rises.
 - Form looks and motions live in the `FORMS` table at the top of `generate.js`.
 
