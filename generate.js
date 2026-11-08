@@ -1,17 +1,15 @@
 // Generates dist/luffy-punch.svg — Luffy throws a Gum-Gum Pistol; every contribution adds power,
-// and every STEP contributions (default 400) he unlocks the next form:
-//   0 Gear 1 · 1×STEP Gear 2 · 2×STEP Gear 3 · 3×STEP Boundman · 4×STEP Snakeman · 5×STEP Gear 5
+// and every 400 contributions he unlocks the next form (the same rule for everyone):
+//   0 Gear 1 · 400 Gear 2 · 800 Gear 3 · 1,200 Boundman · 1,600 Snakeman · 2,000 Gear 5
 // Usage:
 //   GITHUB_TOKEN=xxx GITHUB_USER=name node generate.js   (real data, last 12 months)
 //   node generate.js 800                                  (manual count, for testing)
-//   STEP=500 node generate.js ...                         (contributions per gear; default 400)
 const fs = require("fs");
 const path = require("path");
 
-// Contributions needed per gear. Gear 5 unlocks at 5 x STEP. Pick a pace you can reach:
-//   200 = casual, 400 = default (Gear 5 at 2,000 a year), 600 = very active, 1000 = hardcore.
-const STEP = Number(process.env.STEP) > 0 ? Number(process.env.STEP) : 400;
-const SCALE = Number(process.env.GOAL) > 0 ? Number(process.env.GOAL) : STEP; // how fast raw power rises (defaults to STEP)
+// One fixed rule for everyone: a new gear every 400 contributions (Gear 5 at 2,000).
+const STEP = 400;
+const SCALE = STEP; // how fast raw power (reach, speed, hits) rises
 
 async function getContributions() {
   if (process.argv[2]) return Number(process.argv[2]);
